@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                   <img src="assets/icons8-butterfly-64.png" alt="" class="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-search' ></i>
+                    <span class="nav-item">Search</span>
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt'></i>
+                    <span class="nav-item">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="nav-item">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-book-content'></i>
+                    <span class="nav-item">Tasks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+            </li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <li>
+                <a href="#" class="notif">
+                    <i class='bx bx-bell'></i>
+                    <span class="nav-item">Notification</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="logout" >
+                    <i class='bx bx-log-out ' ></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="home-div">
+        <div class="hello-div">
+            <img src="assets/photo-1614975058789-41316d0e2e9c.avif" alt="">
+            <div>
+              <h3>Hi Mike,</h3>
+              <p>welcome back.</p>
+            </div>
+        </div>
+        <div class="hello-div2">
+            
+            <div class="subinfo">
+                 <h6>Today</h4>
+                 <h3>$19,892</h3>
+                 <p class="light-grey">Account Balance</p>
+             </div>
+         <div class="subinfo1">
+           <h3>$4,000</h3>
+            <p class="light-grey">Year-to-Date Contributions</p>
+         </div>
+         <div class="subinfo1">
+           <h3>$1,892</h3>
+           <p class="light-grey">Total Interest</p>
+           
+           <button>
+            <p>I want to</p>
+            <i class='bx bx-caret-down'></i>
+           </button>
+         </div>
+          
+
+
+        </div>
+    
+        <br>
+        <div class="hello-div2">
+            
+            <div class="subinfo1" id="bottom-border">
+                <h6>Recent Transaction</h4>
+                <p class="info1">2020-08-07</p>
+                <p>Withdrawal Transfer to Bank-XXX11</p>
+            </div>
+            <div class="subinfo1" id="bottom-border">
+                <p class="info2">2020-07-21</p>
+                <p>Withdrawal Transfer to Bank-XXX11</p>
+            </div>
+            <div class="subinfo1" id="bottom-border">
+                <p class="info2">2020-07-16</p>
+                <p>Withdrawal Transfer to Bank-XXX11</p>
+            </div>
+        
+            
+    </div>
+    <!-- second-section -->
+    <section class="second-section">
+        <div class="left-div">
+            <div class="heading-div">
+                <div class="child-div1">
+                    <h6>Retirement Income</h4>
+                    <h4>Starting Year 2056</h6>
+                </div>
+                
+            </div>
+            <div class="estimate">
+                <div class="child-div2">
+                    <h3>$300,000</h3>
+                    <h6>My Goal</h6>
+                </div>
+                <div class="child-div2">
+                    <h3>59%</h3>
+                    <h6>Goal Achieved</h6>
+                </div>
+                <div class="child-div2">
+                    <h3>$300</h3>
+                    <h6>Est. Monthly Income</h6>
+                </div>
+            </div>
+            <div class="graph-div">
+                <div class="graph-sec">
+                  <h5>Contributions Overtime</h2>
+                  <div id="interestChart"></div>
+                  <div class="compare-graph">
+                    <div class="comp-heading">
+                        <h5>How do I compare to my peers?</h5>
+                        <h6>These numbers represent current goal achivement</h6>
+                    </div>
+                    <div class="sub-compare">
+                        <div class="left-selection">
+                            <div class="selection">Age: <span>Under 30 <i class='bx bx-caret-down'></i></span></div>
+                            <div class="selection">Salary: <span>K 20 - K 30 <i class='bx bx-caret-down'></i></span></div>
+                            <div class="selection">Gender: <span>Male <i class='bx bx-caret-down'></i></span></div>
+                        </div>
+                        <div class="progress">
+                            <div class="circular-progress">
+                                <div class="value-container">78%</div>
+                            </div>
+                            <div class="circular-progress2">
+                                <div class="value-container2">95%</div>
+                            </div>
+                            <div class="circular-progress3">
+                                <div class="value-container3">59%</div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-div">
+            <div class="right-up">
+                <h5>Retirement Strategy</h4>
+                <div class="box1">
+                    <h6>Employee Contribution</h6>
+                    <div class="slider">
+                        <input type="range" min="0" max="100" value="12">
+                    <div class="value">12%</div>
+                    </div>
+                    
+                </div>
+                <div class="box2">
+                    <h6>Retirement Age</h6>
+                    <div class="slider">
+                        <input type="range" min="0" max="100" value="65">
+                    <div class="value">65%</div>
+                    </div>
+                </div>
+                <div class="interest">
+                    <h6>Employer Contribution</h6>
+                    <div class="value">8.4%</div>
+                </div>
+                <div class="interest">
+                    <h6>Interest Rate</h6>
+                    <div class="value">5%</div>
+                </div>
+                <div class="button-div">
+                    <button>Update</button>
+                    <div class="help">View Help Docs ></div>
+                </div>
+                
+            </div>
+            <div class="right-down">
+                <div class="learn-more">
+                    <h6 class="plain">Are you considering a</h6>
+                    <h6 class="bold">Housing Advance?</h6>
+                    <h5 class="grey">Limited time reduced interest</h5>
+                    <h5 class="blue">Learn More ></h5>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Data for the chart
+        var data = [
+          {
+            x: ['20', '25', '30', '35', '40', '45', '50', '55', '60', '65'],
+            y: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140],
+            type: 'bar',
+            name: 'Employer',
+            marker: {color: 'rgb(6, 0, 163)'}
+          },
+          {
+            x: ['20', '25', '30', '35', '40', '45', '50', '55', '60', '65'],
+            y: [30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
+            type: 'bar',
+            name: 'Employee',
+            marker: {color: 'rgb(78, 53, 255)'}
+          },
+          {
+            x: ['20', '25', '30', '35', '40', '45', '50', '55', '60', '65'],
+            y: [80, 100, 120, 140, 160, 180, 200, 220, 240, 260],
+            type: 'bar',
+            name: 'Total Interest',
+            marker: {color: 'rgb(133, 177, 250)'}
+          }
+        ];
+    
+        // Layout configuration
+        var layout = {
+          barmode: 'stack', // Stacked bar mode
+          margin: { t: 8, b: 30, l: 70, r: 20 },
+
+          xaxis: {
+            tickmode: 'array',
+            tickvals: ['20', '25', '30', '35', '40', '45', '50', '55', '60', '65'],
+            ticktext: ['20', '25', '30', '35', '40', '45', '50', '55', '60', '65']
+          },
+          yaxis: {
+            tickprefix: '$'
+          }
+        };
+    
+        // Create the stacked bar chart
+        Plotly.newPlot('interestChart', data, layout, {responsive: true});
+    
+        var legend = document.getElementsByClassName('legend')[0];
+        legend.style.display = 'true';
+
+let progressBar = document.querySelector(".circular-progress");
+let valueContainer = document.querySelector(".value-container");
+
+let progressValue = 0;
+let progressEndValue = 78;
+let speed = 50;
+
+let progress = setInterval(() => {
+  progressValue++;
+  valueContainer.textContent = `${progressValue}%`;
+  progressBar.style.background = `conic-gradient(
+      #32CDA5 ${progressValue * 3.6}deg,
+      #DAF5EE ${progressValue * 3.6}deg
+  )`;
+  if (progressValue == progressEndValue) {
+    clearInterval(progress);
+  }
+}, 2);
+//2nd bar
+let progressBar2 = document.querySelector(".circular-progress2");
+let valueContainer2 = document.querySelector(".value-container2");
+
+let progressValue2 = 0;
+let progressEndValue2 = 95;
+let speed2 = 100;
+
+let progress2 = setInterval(() => {
+  progressValue2++;
+  valueContainer2.textContent = `${progressValue2}%`;
+  progressBar2.style.background = `conic-gradient(
+      #32CDA5 ${progressValue2 * 3.6}deg,
+      #DAF5EE ${progressValue2 * 3.6}deg
+  )`;
+  if (progressValue2 == progressEndValue2) {
+    clearInterval(progress2);
+  }
+}, 2);
+//3rd bar
+let progressBar3 = document.querySelector(".circular-progress3");
+let valueContainer3 = document.querySelector(".value-container3");
+
+let progressValue3 = 0;
+let progressEndValue3 = 59;
+let speed3 = 100;
+
+let progress3 = setInterval(() => {
+  progressValue3++;
+  valueContainer3.textContent = `${progressValue3}%`;
+  progressBar3.style.background = `conic-gradient(
+    #32CDA5 ${progressValue3 * 3.6}deg,
+    #DAF5EE ${progressValue3 * 3.6}deg
+  )`;
+  if (progressValue3 == progressEndValue3) {
+    clearInterval(progress3);
+  }
+}, 2);
+
+      </script>
+</body>
+</html>
+
